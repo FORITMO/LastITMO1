@@ -7,11 +7,20 @@ public class NeGlavniy extends Glavniy{
         super(name);
     }
 
+
+
+
     @Override
+    public void getAge() {
+        System.out.println(name);
+
+    }
+
+   /* @Override
     public  String getName(){
         System.out.println(name);
         return name;
-    }
+    } */
 
 
     public  void print(){
@@ -21,6 +30,7 @@ public class NeGlavniy extends Glavniy{
     public static void main(String[] args) {
         NeGlavniy x = new NeGlavniy("test");
         x.print();
-        x.getName();
+       // x.getName();
+        x.getAge();
     }
 }

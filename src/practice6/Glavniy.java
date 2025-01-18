@@ -11,10 +11,8 @@ public abstract class Glavniy {
     protected int dec = scanner.nextInt();
 
 
-    public static int getAge(int age){
-        return age;
-    }
-    public abstract String getName();
+    public abstract void getAge();
+    // public abstract String getName();
 
 
 
