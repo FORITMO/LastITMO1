@@ -25,11 +25,11 @@ public class Words {
 
     }
 
-    public static void replaceText(String text) {
+    public static void replaceText(String text, String word1, String word2) {
       //  Scanner scanner = new Scanner(System.in);
        // String t1 = scanner.nextLine();
        // String t2 = scanner.nextLine();
-        text = text.replaceAll("бяка", "[вырезано цензурой]");
+        text = text.replaceAll(word1, word2);
         System.out.println(text);
     }
 
@@ -52,7 +52,7 @@ public class Words {
         System.out.println(Words.reversWords("CAT DOG"));
         Words.longestWord("fewfeowj wefewf efew few ewfew e");
         System.out.println(Words.isPalindrome("Топот"));
-        Words.replaceText("бяка бяка бака");
+        Words.replaceText("бяка бяка бяка бака", "бяка", "лобстер");
 
 
         Scanner scanner = new Scanner(System.in);
