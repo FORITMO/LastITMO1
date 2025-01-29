@@ -1,7 +1,6 @@
 package practice9;
 
 import java.io.*;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,13 +9,13 @@ public class Files {
     private static final String path = "src//files//";
 
     public static void main(String[] args) throws IOException {
-   //     for (String line : fileArray("text1.txt")) {
-     //       System.out.println(line);
-     //   }
+        for (String line : fileArray("text1.txt")) {
+            System.out.println(line);
+        }
 
-      //  fileWrite("testtest test");
+        fileWrite("testtest test");
 
-      //  clayFiles();
+        clayFiles();
         replaceFile1();
     }
 
@@ -68,7 +67,6 @@ public class Files {
     }
 
 
-
     public static void replaceFile1() throws IOException {
 
         String filePath = "C:\\Users\\Person\\IdeaProjects\\LastITMO1\\src\\files\\text1.txt";
@@ -96,11 +94,7 @@ public class Files {
         System.out.println("File edit");
     }
 
-  /*  public static void replaceFile(String path) throws IOException {
-        String text = Files.readString(Path.of(path));
-        String result = text.replaceAll("[^a-zA-Z0-9]", "\\$");
-        Files.writeString(Path.of(path), result);
-    } */
+
 }
 
 
