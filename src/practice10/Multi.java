@@ -34,32 +34,7 @@ public class Multi {
 
     }
 
-   /* private static void nameThread() {
-
-        Object o = new Object();
-        try {
-            Thread thread1 = new SubClass(o);
-            Thread thread2 = new SubClass(o);
-
-            thread1.start();
-            thread2.start();
-
-            Thread.sleep(10000);
-
-
-            thread1.interrupt();
-            thread2.interrupt();
-        } catch (InterruptedException e) {
-            e.getStackTrace();
-        }
-
-    }*/
-
     public static void main(String[] args) {
-        //   tenThread();
-        //  statusThread();
-        // Counter.incrementCounter();
-        // nameThread();
 
         Counter counter = new Counter();
         try {
